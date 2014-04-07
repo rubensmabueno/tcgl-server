@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origem_id: 
+  destino_id: 
+
+two:
+  origem_id: 
+  destino_id: 

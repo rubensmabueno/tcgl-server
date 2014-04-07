@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  nome: MyString
+  tipo_linha_id: 
+
+two:
+  codigo: MyString
+  nome: MyString
+  tipo_linha_id: 

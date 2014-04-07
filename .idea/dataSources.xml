@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="4185164364">
+    <data-source source="LOCAL" name="Rails tcgl-server: development" uuid="73725a81-9e91-4073-884f-22762abf6b38">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl-server_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails tcgl-server: test" uuid="2b132eeb-0b26-446d-b5db-735cc10e4a61">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl-server_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails tcgl-server: production" uuid="a15437f0-fd66-4abe-9b04-55f71504b476">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl-server_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails projeto: development" uuid="407d57d5-67e2-49c9-9158-74f23da537b0">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gerenciador_desenvolvimento</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails projeto: test" uuid="8da357bc-ec11-451a-83e5-a2f51b042695">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gerenciador_teste</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails projeto: production" uuid="d3c3bbdf-4851-4c77-9d9a-9840ec80b8c1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gerenciador_producao</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails gerenciador: development" uuid="29e149d7-837b-483c-9c03-605b351ad953">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gerenciador_develop</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails gerenciador: test" uuid="55bae66b-54be-40cd-80bf-f71e3b1e6161">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gerenciador_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails gerenciador: production" uuid="74618210-a50b-43f9-b16a-3507cd6fc321">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gerenciador_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
