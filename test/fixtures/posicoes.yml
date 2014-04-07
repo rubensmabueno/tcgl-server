@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  de: MyString
+  para: MyString
+  lat: 9.99
+  lon: 9.99
+
+two:
+  de: MyString
+  para: MyString
+  lat: 9.99
+  lon: 9.99
