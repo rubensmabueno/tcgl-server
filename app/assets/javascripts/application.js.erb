@@ -1,0 +1,91 @@
+// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// compiled file.
+//
+// Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
+// about supported directives.
+//
+//= require jquery
+//= require jquery_ujs
+//= require twitter/bootstrap
+//= require turbolinks
+//= require js-routes
+//= require jquery-ui-map/jquery.ui.map
+//= require_tree .
+
+function preenche_dias() {
+    $.ajax({
+        url: Routes.linha_dias_path($('#js-linha_select').val()),
+        dataType: 'json'
+    }).done(function(data) {
+        var dias = ''
+        data.forEach(function(dia) {
+            dias += "<option value='"+dia.id+"' "+ ( dia.today == true ? 'SELECTED' : '' ) +">"+dia.nome+"</option>"
+        });
+
+        $('#js-dia_select').html(dias)
+
+        preenche_origens();
+    });
+}
+
+function preenche_origens() {
+    $.ajax({
+        url: Routes.linha_dia_pontos_path($('#js-linha_select').val(), $('#js-dia_select').val()),
+        dataType: 'json'
+    }).done(function(data) {
+        var origens = ''
+        data.forEach(function(linha_ponto) {
+            origens += "<option value='"+linha_ponto.ponto.id+"'>"+linha_ponto.ponto.nome+"</option>"
+        });
+
+        $('#js-origem_select').html(origens)
+
+        preenche_destinos();
+    });
+}
+
+function preenche_destinos() {
+    $.ajax({
+        url: Routes.linha_dia_ponto_destinos_path($('#js-linha_select').val(), $('#js-dia_select').val(), $('#js-origem_select').val()),
+        dataType: 'json'
+    }).done(function(data) {
+        var destinos = ''
+        data[0].destinos.forEach(function(linha_ponto) {
+            destinos += "<option value='"+linha_ponto.ponto.id+"'>"+linha_ponto.ponto.nome+"</option>"
+        });
+
+        $('#js-destino_select').html(destinos)
+
+        preenche_horarios();
+    });
+}
+
+function preenche_horarios() {
+    $.ajax({
+        url: Routes.linha_dia_ponto_destino_horarios_path($('#js-linha_select').val(), $('#js-dia_select').val(), $('#js-origem_select').val(), $('#js-destino_select').val())
+    }).done(function(data) {
+        $('#js-horario').html(data)
+    });
+}
+
+$(document).on('change', '#js-origem_select', function() {
+    preenche_destinos();
+})
+
+$(document).on('change', '#js-dia_select', function() {
+    preenche_origens();
+})
+
+$(document).on('change', '#js-linha_select', function() {
+    preenche_dias();
+})
+
+$(document).ready(function() {
+    preenche_dias();
+})

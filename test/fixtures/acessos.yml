@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ip: MyString
+  linha_ponto_linha_ponto_id: 
+
+two:
+  ip: MyString
+  linha_ponto_linha_ponto_id: 
