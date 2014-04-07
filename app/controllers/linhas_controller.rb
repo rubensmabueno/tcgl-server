@@ -1,0 +1,2 @@
+class LinhasController < ApplicationController
+end
