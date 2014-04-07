@@ -1,5 +1,8 @@
 namespace :populate do
   desc "TODO"
+  task all: [:linhas_pontos, :dias, :linhas, :pontos, :horarios]
+
+  desc "TODO"
   task linhas_pontos: :environment do
     TipoLinha.create!(:nome => 'Linhas Convencionais')
     TipoLinha.create!(:nome => 'Linhas PSIU')

@@ -34,7 +34,53 @@
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCIf92tKGJQKwmv6KQj14kkN3Wgw8sp3KY&sensor=false" %>
     <%= javascript_include_tag "application" %>
+
+    <script type="text/javascript">
+        var markers = []
+
+        function poll(){
+            setTimeout(function(){
+                $.ajax({
+                    url: Routes.posicoes_linha_path($('#js-linha_select').val()),
+                    dataType: "json",
+                    success: function(data) {
+                        add_markers(data);
+                        poll();
+                    }
+                });
+            }, 10000);
+        };
+
+        function add_markers(posicoes) {
+            markers.forEach(function(marker) { marker.setMap(null); })
+            markers = []
+
+            posicoes.forEach(function(posicao) {
+                markers[posicao.id] = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(posicao.lat, posicao.lon),
+                    title: posicao.nome
+                });
+            })
+        }
+
+        function initialize() {
+            var myOptions = {
+                zoom: 12,
+                maxZoom: 16,
+                minZoom: 1,
+                streetViewControl: false,
+                center: new google.maps.LatLng(-23.307895, -51.161442),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+            poll();
+        }
+
+        window.onload = initialize;
+    </script>
   </head>
   <body>
 
