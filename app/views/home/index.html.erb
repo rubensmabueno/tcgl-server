@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= label_tag :linha_id, 'Linha' %>
+      <%= select_tag :linha_id, options_from_collection_for_select(@linhas, :id, :codigo_nome), :class => "form-control", :id => 'js-linha_select' %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= label_tag :dia_id, 'Dia' %>
+      <%= select_tag :dia_id, [], :class => "form-control", :id => 'js-dia_select' %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= label_tag :origem_id, 'Origem' %>
+      <%= select_tag :origem_id, [], :class => "form-control", :id => 'js-origem_select' %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= label_tag :destino_id, 'Destino' %>
+      <%= select_tag :destino_id, [], :class => "form-control", :id => 'js-destino_select' %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div id="map-canvas"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12" id="js-horario">
+  </div>
+</div>
