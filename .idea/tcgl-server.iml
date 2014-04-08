@@ -172,6 +172,7 @@
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v2.2.1, RVM: ruby-2.0.0-p451) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="twitter-bootstrap-rails (v3.1.1@cdc2fa, RVM: ruby-2.0.0-p451) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.39, RVM: ruby-2.0.0-p451) [gem]" level="application" />
+    <orderEntry type="module" module-name="portfolio" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

@@ -1,6 +1,8 @@
 class Itinerario < ActiveRecord::Base
   belongs_to :linha
 
+  default_scope order(:ordem)
+
   def color
     case self[:sentido]
       when 0
