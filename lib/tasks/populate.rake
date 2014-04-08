@@ -108,8 +108,8 @@ namespace :populate do
         puts itinerarios if itinerarios.code != '200'
       end while itinerarios.code != '200'
 
-      itinerarios_ida = JSON.parse(itinerarios.body)['ida'].map { |e| { :nome => e['Nome'], :sentido => e['Sentido'].to_f, :lat => e['Lat'].to_f, :lng => e['Lng'].to_f, :linha => linha } }
-      itinerarios_volta = JSON.parse(itinerarios.body)['volta'].map { |e| { :nome => e['Nome'], :sentido => e['Sentido'].to_f, :lat => e['Lat'].to_f, :lng => e['Lng'].to_f, :linha => linha } }
+      itinerarios_ida = JSON.parse(itinerarios.body)['ida'].map.with_index { |e, index| { :nome => e['Nome'], :sentido => e['Sentido'].to_f, :lat => e['Lat'].to_f, :lng => e['Lng'].to_f, :linha => linha, :ordem => index.to_f } }
+      itinerarios_volta = JSON.parse(itinerarios.body)['volta'].map.with_index { |e, index| { :nome => e['Nome'], :sentido => e['Sentido'].to_f, :lat => e['Lat'].to_f, :lng => e['Lng'].to_f, :linha => linha, :ordem => index.to_f } }
 
       Itinerario.create!(itinerarios_ida)
       Itinerario.create!(itinerarios_volta)

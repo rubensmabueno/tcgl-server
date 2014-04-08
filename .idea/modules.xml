@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../portfolio/.idea/portfolio.iml" filepath="$PROJECT_DIR$/../portfolio/.idea/portfolio.iml" />
       <module fileurl="file://$PROJECT_DIR$/../projeto/.idea/projeto.iml" filepath="$PROJECT_DIR$/../projeto/.idea/projeto.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tcgl-server.iml" filepath="$PROJECT_DIR$/.idea/tcgl-server.iml" />
     </modules>

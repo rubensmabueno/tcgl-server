@@ -54,9 +54,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/segments_3u" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/spellchecker/segments.gen" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/spellchecker/segments_1" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/app/assets/images/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/.idea/.generators" afterPath="$PROJECT_DIR$/../gerenciador/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130524000913_create_dias.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130524000913_create_dias.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601150013_create_enderecos.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601150013_create_enderecos.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130626233007_create_avaliacao_perimetros.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130626233007_create_avaliacao_perimetros.rb" />
@@ -80,12 +78,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/fichas/_form.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/fichas/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/telefones/_telefones_form.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/telefones/_telefones_form.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../portfolio/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/../portfolio/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/database.yml" afterPath="$PROJECT_DIR$/../gerenciador/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/initializers/devise.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/models/exemplo_exercicio.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/models/exemplo_exercicio.rb" />
@@ -100,14 +96,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/index.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/fichas/index.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/fichas/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/initializers/inflections.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/linha.rb" afterPath="$PROJECT_DIR$/app/models/linha.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/linhas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/linhas_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/itinerario.rb" afterPath="$PROJECT_DIR$/app/models/itinerario.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/clientes/new.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/clientes/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/populate.rake" afterPath="$PROJECT_DIR$/lib/tasks/populate.rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/postagens.css" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/postagens.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../projeto/.idea/projeto.iml" afterPath="$PROJECT_DIR$/../projeto/.idea/projeto.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/routes.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/schema.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/solr/conf/schema.xml" afterPath="$PROJECT_DIR$/../gerenciador/solr/conf/schema.xml" />
@@ -119,6 +114,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/solr/conf/solrconfig.xml" afterPath="$PROJECT_DIR$/../gerenciador/solr/conf/solrconfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/sunspot.yml" afterPath="$PROJECT_DIR$/../gerenciador/config/sunspot.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tcgl-server.iml" afterPath="$PROJECT_DIR$/.idea/tcgl-server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../gerenciador/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../projeto/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../projeto/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -144,19 +140,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="populate.rake" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/tasks/populate.rake">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="19" selection-start="827" selection-end="827" vertical-scroll-proportion="-0.95527154" vertical-offset="1120" max-vertical-offset="2286">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="25" selection-start="315" selection-end="315" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="2898">
+            <state line="142" column="32" selection-start="5709" selection-end="5709" vertical-scroll-proportion="0.7352941" vertical-offset="2106" max-vertical-offset="2898">
               <folding />
             </state>
           </provider>
@@ -197,20 +184,22 @@
         <option value="$PROJECT_DIR$/app/controllers/horarios_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/horario.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20140407215302_change_posicoes.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/linha.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/itinerarios_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/itinerario.rb" />
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/markerwithlabel.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/linhas_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/../portfolio/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/db/migrate/20140408015818_change_itinerarios.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/populate.rake" />
+        <option value="$PROJECT_DIR$/app/models/itinerario.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -244,7 +233,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -260,7 +248,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,24 +327,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,96 +402,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfolio" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="project.settings.patched" value="true" />
@@ -608,15 +563,19 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Rails.Development: projeto" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Production: projeto" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec: projeto" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test: projeto" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Development: tcgl-server" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Production: tcgl-server" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.spec: tcgl-server" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.test: tcgl-server" />
+    <list size="12">
+      <item index="0" class="java.lang.String" itemvalue="Rails.Development: portfolio" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Production: portfolio" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec: portfolio" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.test: portfolio" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: projeto" />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Production: projeto" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.spec: projeto" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.test: projeto" />
+      <item index="8" class="java.lang.String" itemvalue="Rails.Development: tcgl-server" />
+      <item index="9" class="java.lang.String" itemvalue="Rails.Production: tcgl-server" />
+      <item index="10" class="java.lang.String" itemvalue="Rake.spec: tcgl-server" />
+      <item index="11" class="java.lang.String" itemvalue="Rake.test: tcgl-server" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -672,20 +631,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/populate.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -843,21 +788,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140407215302_change_posicoes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="295" selection-end="295" vertical-scroll-proportion="0.41042346" vertical-offset="0" max-vertical-offset="614">
           <folding />
         </state>
       </provider>
@@ -941,28 +874,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/itinerario.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="247" selection-end="247" vertical-scroll-proportion="0.3943662" vertical-offset="0" max-vertical-offset="639">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="315" selection-end="315" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="2898">
+        <state line="21" column="20" selection-start="414" selection-end="414" vertical-scroll-proportion="0.5915493" vertical-offset="0" max-vertical-offset="639">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140408015818_change_itinerarios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="92" selection-end="92" vertical-scroll-proportion="0.056338027" vertical-offset="0" max-vertical-offset="639">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../portfolio/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="147" selection-start="2353" selection-end="2353" vertical-scroll-proportion="-6.6666665" vertical-offset="612" max-vertical-offset="1368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140407215302_change_posicoes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="8" selection-start="55" selection-end="130" vertical-scroll-proportion="0.028169014" vertical-offset="0" max-vertical-offset="639">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/populate.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="19" selection-start="827" selection-end="827" vertical-scroll-proportion="-0.95527154" vertical-offset="1120" max-vertical-offset="2286">
+        <state line="111" column="78" selection-start="4227" selection-end="4227" vertical-scroll-proportion="0.0" vertical-offset="1579" max-vertical-offset="2268">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/itinerario.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="87" selection-end="87" vertical-scroll-proportion="0.08450704" vertical-offset="0" max-vertical-offset="639">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="32" selection-start="5709" selection-end="5709" vertical-scroll-proportion="0.7352941" vertical-offset="2106" max-vertical-offset="2898">
           <folding />
         </state>
       </provider>
