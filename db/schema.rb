@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140407154205) do
+ActiveRecord::Schema.define(version: 20140407222458) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,18 @@ ActiveRecord::Schema.define(version: 20140407154205) do
   end
 
   add_index "horarios", ["linha_ponto_linha_ponto_id"], name: "index_horarios_on_linha_ponto_linha_ponto_id", using: :btree
+
+  create_table "itinerarios", force: true do |t|
+    t.string   "nome"
+    t.integer  "sentido"
+    t.decimal  "lat"
+    t.decimal  "lng"
+    t.integer  "linha_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "itinerarios", ["linha_id"], name: "index_itinerarios_on_linha_id", using: :btree
 
   create_table "linhas", force: true do |t|
     t.string   "codigo"
@@ -85,9 +97,10 @@ ActiveRecord::Schema.define(version: 20140407154205) do
     t.string   "de"
     t.string   "para"
     t.decimal  "lat"
-    t.decimal  "lon"
+    t.decimal  "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "onibus"
   end
 
   create_table "tipos_linhas", force: true do |t|
