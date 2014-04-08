@@ -4,25 +4,25 @@
     <data-source source="LOCAL" name="Rails tcgl-server: development" uuid="73725a81-9e91-4073-884f-22762abf6b38">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl-server_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl_server_desenvolvimento</jdbc-url>
       <user-name>postgres</user-name>
-      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails tcgl-server: test" uuid="2b132eeb-0b26-446d-b5db-735cc10e4a61">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl-server_test</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl_server_teste</jdbc-url>
       <user-name>postgres</user-name>
-      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails tcgl-server: production" uuid="a15437f0-fd66-4abe-9b04-55f71504b476">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl-server_production</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tcgl_server_producao</jdbc-url>
       <user-name>postgres</user-name>
-      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails projeto: development" uuid="407d57d5-67e2-49c9-9158-74f23da537b0">

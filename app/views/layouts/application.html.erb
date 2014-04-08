@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "TcglServer" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "LondrinaBus" %></title>
+    <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -35,10 +36,13 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCIf92tKGJQKwmv6KQj14kkN3Wgw8sp3KY&sensor=false" %>
+    <%= javascript_include_tag "markerwithlabel" %>
     <%= javascript_include_tag "application" %>
 
     <script type="text/javascript">
         var markers = []
+        var itinerarios = []
+        var map
 
         function poll(){
             setTimeout(function(){
@@ -58,17 +62,55 @@
             markers = []
 
             posicoes.forEach(function(posicao) {
-                markers[posicao.id] = new google.maps.Marker({
+                markers[posicao.id] = new MarkerWithLabel({
                     map: map,
-                    position: new google.maps.LatLng(posicao.lat, posicao.lon),
-                    title: posicao.nome
+                    position: new google.maps.LatLng(posicao.lat, posicao.lng),
+                    labelContent: ( "De: " + posicao.de + " <br>Para: " + posicao.para ),
+                    labelAnchor: new google.maps.Point(0, 0),
+                    labelClass: "label-marker", // the CSS class for the label
+                    labelStyle: {opacity: 0.75}
                 });
             })
         }
 
+        function altera_itinerario() {
+            itinerarios.forEach(function(itinerario) { itinerario.setMap(null); })
+            itinerarios = []
+
+            $.ajax({
+                url: Routes.linha_itinerarios_path($('#js-linha_select').val()),
+                dataType: 'json'
+            }).done(function(data) {
+                $.ajax({
+                    url: Routes.posicoes_linha_path($('#js-linha_select').val()),
+                    dataType: "json",
+                    success: function(data) {
+                        add_markers(data);
+                    }
+                });
+
+                var itinerarios_ida = []
+
+                $.each(data, function(index1, itinerario_sentidos) {
+                    itinerarios_ida = []
+                    $.each(itinerario_sentidos, function(index2, itinerario) {
+                        itinerarios_ida.push(new google.maps.LatLng(itinerario.lat, itinerario.lng))
+                        color = itinerario.color;
+                    })
+
+                    itinerarios.push( new google.maps.Polyline({
+                        map: map,
+                        path: itinerarios_ida,
+                        strokeColor: color,
+                        strokeWeight: 2
+                    }));
+                })
+            });
+        }
+
         function initialize() {
             var myOptions = {
-                zoom: 12,
+                zoom: 14,
                 maxZoom: 16,
                 minZoom: 1,
                 streetViewControl: false,
@@ -77,6 +119,7 @@
             };
             map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
             poll();
+            altera_itinerario();
         }
 
         window.onload = initialize;
@@ -92,11 +135,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">LondrinaBus BETA</a>
-        <div class="nav-collapse collapse navbar-responsive-collapse">
+        <div class="nav-collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "by Rubens Minoru Andako Bueno", "#" %></li>
           </ul>
         </div>
       </div>
@@ -105,11 +149,6 @@
     <div class="container">
       <%= bootstrap_flash %>
       <%= yield %>
-
-      <footer>
-        <p class="text-right">by Rubens Minoru Andako Bueno</p>
-      </footer>
-
     </div> <!-- /container -->
 
   </body>

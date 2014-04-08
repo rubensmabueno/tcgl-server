@@ -6,6 +6,8 @@ TcglServer::Application.routes.draw do
   resources :linhas do
     get :posicoes, :on => :member
 
+    resources :itinerarios
+
     resources :dias do
       resources :pontos do
         resources :destinos do

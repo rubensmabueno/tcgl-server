@@ -8,16 +8,24 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require_tree .
+ *= require_self
  */
 
 .margin-top-25 {
     margin-top: 25px;
 }
 
+.label-marker {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    clear: both;
+}
+
 #map-canvas {
-    height: 250px;
+    height: 400px;
     margin: 0px;
     padding: 0px
 }
