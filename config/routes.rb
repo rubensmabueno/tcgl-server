@@ -5,6 +5,8 @@ TcglServer::Application.routes.draw do
 
   resources :linhas do
     get :posicoes, :on => :member
+    post :partidas, :on => :collection
+    post :chegadas, :on => :collection
 
     resources :itinerarios
 

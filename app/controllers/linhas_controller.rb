@@ -19,4 +19,14 @@ class LinhasController < ApplicationController
 
     render :js => posicoes.to_json
   end
+
+  def partidas
+    itinerarios = Itinerario.within(0.1, :units => :kms, :origin => params['posicao_partida'].values)
+    render :js => itinerarios.uniq_by(&:linha_id).map { |e| e.linha }.to_json(:methods => [:codigo_nome])
+  end
+
+  def chegadas
+    itinerarios = Itinerario.within(0.1, :units => :kms, :origin => params['posicao_chegada'].values)
+    render :js => itinerarios.uniq_by(&:linha_id).map { |e| e.linha }.to_json(:methods => [:codigo_nome])
+  end
 end

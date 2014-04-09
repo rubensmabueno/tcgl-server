@@ -44,6 +44,11 @@
         var itinerarios = []
         var map
 
+        var marker_ida
+        var marker_volta
+        var circle_ida
+        var circle_volta
+
         function poll(){
             setTimeout(function(){
                 $.ajax({
@@ -120,6 +125,108 @@
             map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
             poll();
             altera_itinerario();
+
+            google.maps.event.addListener(map, "dblclick", function (mEvent) {
+                if(marker_ida == null) {
+                    marker_ida = new MarkerWithLabel({
+                        map: map,
+                        position: mEvent.latLng,
+                        labelContent: ( "Partida" ),
+                        labelAnchor: new google.maps.Point(0, 0),
+                        labelClass: "label-marker", // the CSS class for the label
+                        draggable:true,
+                        labelStyle: {opacity: 0.75}
+                    });
+
+                    calcula_partida();
+
+                    google.maps.event.addListener( marker_ida, 'dragend', function() {
+                        calcula_partida();
+                    });
+                } else if(marker_volta == null) {
+                    marker_volta = new MarkerWithLabel({
+                        map: map,
+                        position: mEvent.latLng,
+                        labelContent: ( "Chegada" ),
+                        labelAnchor: new google.maps.Point(0, 0),
+                        labelClass: "label-marker", // the CSS class for the label
+                        draggable:true,
+                        labelStyle: {opacity: 0.75}
+                    });
+
+                    calcula_chegada();
+
+                    google.maps.event.addListener( marker_volta, 'dragend', function() {
+                        calcula_chegada();
+                    });
+                }
+            });
+        }
+
+        function calcula_partida() {
+            if(circle_ida != undefined) {
+                circle_ida.setMap(null);
+            } else {
+                $('#map-canvas').parent('.col-md-12').removeClass('col-md-12').addClass('col-md-9')
+                $('.js-onibus_partida_chegada').removeClass('hidden')
+            }
+
+            circle_ida = new google.maps.Circle({
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35,
+                map: map,
+                center: marker_ida.getPosition(),
+                radius: 100
+            });
+
+            $.ajax({
+                url: Routes.partidas_linhas_path(),
+                data: { posicao_partida: { lat: marker_ida.getPosition().lat(), lng: marker_ida.getPosition().lng() } },
+                dataType: "json",
+                method: 'POST',
+                success: function(data) {
+                    linhas_partidas = ''
+                    data.forEach(function(linha) {
+                        linhas_partidas += linha.codigo_nome + '<br />'
+                    });
+                    $('.js-onibus_partida').html(linhas_partidas);
+                }
+            });
+        }
+
+        function calcula_chegada() {
+            if(circle_volta != undefined) {
+                circle_volta.setMap(null);
+            }
+
+            circle_volta = new google.maps.Circle({
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35,
+                map: map,
+                center: marker_volta.getPosition(),
+                radius: 100
+            });
+
+            $.ajax({
+                url: Routes.chegadas_linhas_path(),
+                data: { posicao_partida: { lat: marker_ida.getPosition().lat(), lng: marker_ida.getPosition().lng() }, posicao_chegada: { lat: marker_volta.getPosition().lat(), lng: marker_volta.getPosition().lng() } },
+                dataType: "json",
+                method: 'POST',
+                success: function(data) {
+                    debugger;
+                    linhas_chegadas = ''
+                    data.forEach(function(linha) {
+                        linhas_chegadas += linha.codigo_nome + '<br />'
+                    });
+                    $('.js-onibus_chegada').html(linhas_chegadas);
+                }
+            });
         }
 
         window.onload = initialize;
@@ -135,10 +242,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">LondrinaBus BETA</a>
-        <div class="nav-collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-          </ul>
-
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "by Rubens Minoru Andako Bueno", "http://www.rubensminoru.com" %></li>
           </ul>
@@ -147,9 +251,12 @@
     </div>
 
     <div class="container">
+      <div class="bottom-float-right">
+        <div class="alert alert-success">Experimente um click duplo no mapa. ;)</div>
+      </div>
+
       <%= bootstrap_flash %>
       <%= yield %>
     </div> <!-- /container -->
-
   </body>
 </html>

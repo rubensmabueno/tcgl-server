@@ -1,4 +1,5 @@
 class Itinerario < ActiveRecord::Base
+  acts_as_mappable :default_units => :kms
   belongs_to :linha
 
   default_scope order(:ordem)
