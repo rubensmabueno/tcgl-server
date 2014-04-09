@@ -55,7 +55,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/spellchecker/segments.gen" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/spellchecker/segments_1" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/.idea/.generators" afterPath="$PROJECT_DIR$/../gerenciador/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130524000913_create_dias.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130524000913_create_dias.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601150013_create_enderecos.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601150013_create_enderecos.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130626233007_create_avaliacao_perimetros.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130626233007_create_avaliacao_perimetros.rb" />
@@ -81,7 +80,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../portfolio/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/../portfolio/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/database.yml" afterPath="$PROJECT_DIR$/../gerenciador/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/initializers/devise.rb" />
@@ -96,16 +94,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/clientes/index.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/clientes/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/index.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/fichas/index.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/fichas/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/horarios/index.html.erb" afterPath="$PROJECT_DIR$/app/views/horarios/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/initializers/inflections.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/itinerario.rb" afterPath="$PROJECT_DIR$/app/models/itinerario.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/linhas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/linhas_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/clientes/new.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/clientes/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/postagens.css" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/postagens.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../projeto/.idea/projeto.iml" afterPath="$PROJECT_DIR$/../projeto/.idea/projeto.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/routes.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/schema.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/solr/conf/schema.xml" afterPath="$PROJECT_DIR$/../gerenciador/solr/conf/schema.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/initializers/secret_token.rb" />
@@ -692,10 +685,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32795155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32795155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
