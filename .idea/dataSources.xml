@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4185164364">
+  <component name="DataSourceManagerImpl" format="xml" hash="3933499755">
     <data-source source="LOCAL" name="Rails tcgl-server: development" uuid="73725a81-9e91-4073-884f-22762abf6b38">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
@@ -71,6 +71,12 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1/gerenciador_production</jdbc-url>
       <user-name>postgres</user-name>
       <user-password>dfcbdfdadfdadfc5dfc6dfc5dfcfdfd2</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails portfolio: production" uuid="e442cc18-0815-4b98-a43c-315daf5f581d">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../portfolio/portfolio_producao</jdbc-url>
       <libraries />
     </data-source>
   </component>

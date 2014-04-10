@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "LondrinaBus" %></title>
+    <meta name="description" content="Website para disponibilização de informações do ônibus de Londrina. Ferramentas de rastreamento, itinerários e horários, todas disponíveis para que você nunca mais perca a hora do seu ônibus." />
+    <meta name="keywords" content="tcgl, transportes, coletivos, grande, londrina, ônibus, rastremanto, horários, itinerários">
+    <meta name="language" content="pt-br">
+    <meta name=”robots” content=”index,follow” />
     <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
 
@@ -38,6 +42,17 @@
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCIf92tKGJQKwmv6KQj14kkN3Wgw8sp3KY&sensor=false" %>
     <%= javascript_include_tag "markerwithlabel" %>
     <%= javascript_include_tag "application" %>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-36734815-2', 'londrinabus.com.br');
+        ga('send', 'pageview');
+
+    </script>
 
     <script type="text/javascript">
         var markers = []
@@ -252,7 +267,7 @@
 
     <div class="container">
       <div class="bottom-float-right">
-        <div class="alert alert-success">Experimente um click duplo no mapa. ;)</div>
+        <div class="alert alert-success">Experimente um click duplo no mapa. ;) Arraste-o a vontade.</div>
       </div>
 
       <%= bootstrap_flash %>
