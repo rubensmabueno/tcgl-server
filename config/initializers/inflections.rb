@@ -79,4 +79,6 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'LinhaPonto', 'LinhasPontos'
   inflect.irregular 'linha_ponto_linha_ponto', 'linhas_pontos_linhas_pontos'
   inflect.irregular 'LinhaPontoLinhaPonto', 'LinhasPontosLinhasPontos'
+  inflect.irregular 'acesso_linha_ponto', 'acessos_linhas_pontos'
+  inflect.irregular 'AcessoLinhaPonto', 'AcessosLinhasPontos'
 end

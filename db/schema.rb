@@ -11,21 +11,63 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140408015818) do
+ActiveRecord::Schema.define(version: 20140416003051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "acessos", force: true do |t|
     t.string   "ip"
-    t.integer  "linha_ponto_linha_ponto_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "acessos", ["linha_ponto_linha_ponto_id"], name: "index_acessos_on_linha_ponto_linha_ponto_id", using: :btree
+  create_table "acessos_linhas_pontos", force: true do |t|
+    t.integer  "linha_id"
+    t.integer  "dia_id"
+    t.integer  "origem_id"
+    t.integer  "destino_id"
+    t.integer  "acesso_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "acessos_linhas_pontos", ["acesso_id"], name: "index_acessos_linhas_pontos_on_acesso_id", using: :btree
+  add_index "acessos_linhas_pontos", ["destino_id"], name: "index_acessos_linhas_pontos_on_destino_id", using: :btree
+  add_index "acessos_linhas_pontos", ["dia_id"], name: "index_acessos_linhas_pontos_on_dia_id", using: :btree
+  add_index "acessos_linhas_pontos", ["linha_id"], name: "index_acessos_linhas_pontos_on_linha_id", using: :btree
+  add_index "acessos_linhas_pontos", ["origem_id"], name: "index_acessos_linhas_pontos_on_origem_id", using: :btree
+
+  create_table "bairros", force: true do |t|
+    t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cidades", force: true do |t|
+    t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "dias", force: true do |t|
+    t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "enderecos", force: true do |t|
+    t.string   "rua"
+    t.string   "numero"
+    t.string   "cep"
+    t.integer  "bairro_id"
+    t.integer  "cidade_id"
+    t.integer  "estado_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "estados", force: true do |t|
     t.string   "nome"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -51,6 +93,9 @@ ActiveRecord::Schema.define(version: 20140408015818) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "ordem"
+    t.integer  "endereco_id"
+    t.integer  "ponto_id"
+    t.decimal  "distancia"
   end
 
   add_index "itinerarios", ["linha_id"], name: "index_itinerarios_on_linha_id", using: :btree
@@ -102,6 +147,7 @@ ActiveRecord::Schema.define(version: 20140408015818) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "onibus"
+    t.integer  "linha_id"
   end
 
   create_table "tipos_linhas", force: true do |t|

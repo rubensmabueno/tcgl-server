@@ -4,6 +4,7 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gerenciador" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../portfolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../prohauser" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../projeto" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../tcgl-website" vcs="Git" />
   </component>

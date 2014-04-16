@@ -2,19 +2,19 @@ TcglServer::Application.routes.draw do
   root :to => "home#index"
 
   resources :home
+  resources :horarios do
+    post :index, :on => :collection
+  end
 
   resources :linhas do
-    get :posicoes, :on => :member
+    post :posicoes, :on => :collection
     post :partidas, :on => :collection
     post :chegadas, :on => :collection
-
-    resources :itinerarios
+    post :itinerarios, :on => :collection
 
     resources :dias do
       resources :pontos do
-        resources :destinos do
-          resources :horarios
-        end
+        resources :destinos
       end
     end
   end

@@ -1,8 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @linhas = Linha.includes(:linhas_pontos => [:ponto, :destinos, :dia]).all
-    @dias = Dia.all
-    @pontos = Ponto.all
+    @acesso = Acesso.new
   end
 
   def horario

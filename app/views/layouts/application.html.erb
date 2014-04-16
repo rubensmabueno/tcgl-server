@@ -77,10 +77,21 @@
         var circle_ida
         var circle_volta
 
+        function linhas_id() {
+            ids = new Array();
+            $.each( $('.js-linha_select:visible'), function(index, linha) {
+                ids.push($(linha).val());
+            });
+
+            return ids;
+        }
+
         function poll(){
             setTimeout(function(){
                 $.ajax({
-                    url: Routes.posicoes_linha_path($('#js-linha_select').val()),
+                    url: Routes.posicoes_linhas_path(),
+                    data: { 'linhas_id[]': linhas_id() },
+                    type: 'POST',
                     dataType: "json",
                     success: function(data) {
                         add_markers(data);
@@ -98,7 +109,7 @@
                 markers[posicao.id] = new MarkerWithLabel({
                     map: map,
                     position: new google.maps.LatLng(posicao.lat, posicao.lng),
-                    labelContent: ( "De: " + posicao.de + " <br>Para: " + posicao.para ),
+                    labelContent: ( posicao.linha.nome + " <br>Para: " + posicao.para ),
                     labelAnchor: new google.maps.Point(0, 0),
                     labelClass: "label-marker", // the CSS class for the label
                     labelStyle: {opacity: 0.75}
@@ -111,32 +122,36 @@
             itinerarios = []
 
             $.ajax({
-                url: Routes.linha_itinerarios_path($('#js-linha_select').val()),
+                url: Routes.itinerarios_linhas_path(),
+                data: { 'linhas_id[]': linhas_id() },
+                type: 'POST',
                 dataType: 'json'
             }).done(function(data) {
                 $.ajax({
-                    url: Routes.posicoes_linha_path($('#js-linha_select').val()),
+                    url: Routes.posicoes_linhas_path(),
+                    data: { 'linhas_id[]': linhas_id() },
+                    type: 'POST',
                     dataType: "json",
                     success: function(data) {
                         add_markers(data);
                     }
                 });
 
-                var itinerarios_ida = []
+                $.each(data, function(index1, itinerario_linhas) {
+                    $.each(itinerario_linhas, function(index2, itinerario_sentidos) {
+                        itinerarios_ida = []
+                        $.each(itinerario_sentidos, function(index3, itinerario) {
+                            itinerarios_ida.push(new google.maps.LatLng(itinerario.lat, itinerario.lng))
+                            color = itinerario.color;
+                        })
 
-                $.each(data, function(index1, itinerario_sentidos) {
-                    itinerarios_ida = []
-                    $.each(itinerario_sentidos, function(index2, itinerario) {
-                        itinerarios_ida.push(new google.maps.LatLng(itinerario.lat, itinerario.lng))
-                        color = itinerario.color;
-                    })
-
-                    itinerarios.push( new google.maps.Polyline({
-                        map: map,
-                        path: itinerarios_ida,
-                        strokeColor: color,
-                        strokeWeight: 2
-                    }));
+                        itinerarios.push( new google.maps.Polyline({
+                            map: map,
+                            path: itinerarios_ida,
+                            strokeColor: color,
+                            strokeWeight: 2
+                        }));
+                    });
                 })
             });
         }
@@ -199,26 +214,27 @@
                 $('.js-onibus_partida_chegada').removeClass('hidden')
             }
 
-            circle_ida = new google.maps.Circle({
-                strokeColor: '#FF0000',
-                strokeOpacity: 0.8,
-                strokeWeight: 2,
-                fillColor: '#FF0000',
-                fillOpacity: 0.35,
-                map: map,
-                center: marker_ida.getPosition(),
-                radius: 100
-            });
-
             $.ajax({
                 url: Routes.partidas_linhas_path(),
                 data: { posicao_partida: { lat: marker_ida.getPosition().lat(), lng: marker_ida.getPosition().lng() } },
                 dataType: "json",
                 method: 'POST',
                 success: function(data) {
+                    circle_ida = new google.maps.Circle({
+                        strokeColor: '#FF0000',
+                        strokeOpacity: 0.8,
+                        strokeWeight: 2,
+                        fillColor: '#FF0000',
+                        fillOpacity: 0.35,
+                        map: map,
+                        center: marker_ida.getPosition(),
+                        radius: data['distancia'] * 1000
+                    });
+
                     linhas_partidas = ''
-                    data.forEach(function(linha) {
-                        linhas_partidas += linha.codigo_nome + '<br />'
+
+                    data['itinerario'].forEach(function(linha) {
+                        linhas_partidas += '<a href="#" class="js-add_linha" data-linha="' + linha.id + '"><icon class="fa fa-plus"></i></a> ' + linha.codigo_nome + '<br />'
                     });
                     $('.js-onibus_partida').html(linhas_partidas);
                 }
@@ -230,27 +246,26 @@
                 circle_volta.setMap(null);
             }
 
-            circle_volta = new google.maps.Circle({
-                strokeColor: '#FF0000',
-                strokeOpacity: 0.8,
-                strokeWeight: 2,
-                fillColor: '#FF0000',
-                fillOpacity: 0.35,
-                map: map,
-                center: marker_volta.getPosition(),
-                radius: 100
-            });
-
             $.ajax({
                 url: Routes.chegadas_linhas_path(),
                 data: { posicao_partida: { lat: marker_ida.getPosition().lat(), lng: marker_ida.getPosition().lng() }, posicao_chegada: { lat: marker_volta.getPosition().lat(), lng: marker_volta.getPosition().lng() } },
                 dataType: "json",
                 method: 'POST',
                 success: function(data) {
-                    debugger;
+                    circle_volta = new google.maps.Circle({
+                        strokeColor: '#FF0000',
+                        strokeOpacity: 0.8,
+                        strokeWeight: 2,
+                        fillColor: '#FF0000',
+                        fillOpacity: 0.35,
+                        map: map,
+                        center: marker_volta.getPosition(),
+                        radius: data['distancia'] * 1000
+                    });
+
                     linhas_chegadas = ''
-                    data.forEach(function(linha) {
-                        linhas_chegadas += linha.codigo_nome + '<br />'
+                    data['itinerario'].forEach(function(linha) {
+                        linhas_chegadas += '<a href="#" class="js-add_linha" data-linha="' + linha.id + '"><icon class="fa fa-plus"></i></a> ' + linha.codigo_nome + '<br />'
                     });
                     $('.js-onibus_chegada').html(linhas_chegadas);
                 }
@@ -269,7 +284,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">LondrinaBus BETA</a>
+        <a class="navbar-brand" href="#"><%= image_tag 'bandeira.png' %> LondrinaBus</a>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "by Rubens Minoru Andako Bueno", "http://www.rubensminoru.com" %></li>
@@ -280,7 +295,7 @@
 
     <div class="container">
       <div class="bottom-float-right">
-        <div class="alert alert-success">Experimente um click duplo no mapa. ;) Arraste-o a vontade.</div>
+        <div class="alert alert-danger">Experimente um click duplo no mapa. ;) Arraste-o a vontade.</div>
       </div>
 
       <%= bootstrap_flash %>

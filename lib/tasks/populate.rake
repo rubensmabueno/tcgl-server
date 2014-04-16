@@ -118,4 +118,32 @@ namespace :populate do
     puts "Itinerários criados"
   end
 
+  desc "TODO"
+  task reverse_geocode_itinerarios: :environment do
+    pbar = ProgressBar.new("Itinerários", Itinerario.where(:endereco_id => nil).count)
+    itinerario_anterior = nil
+
+    Itinerario.where(:endereco_id => nil).all.each do |itinerario|
+      endereco_endereco = Geokit::Geocoders::GoogleGeocoder.reverse_geocode(itinerario.lat.to_s + ',' + itinerario.lng.to_s)
+      raise endereco_endereco.all.inspect
+
+      #puts endereco_endereco.full_address
+      endereco_endereco = endereco_endereco
+
+      endereco = Endereco.find_or_create_by_rua_and_numero(:rua => endereco_endereco.street_name, :numero => endereco_endereco.street_number, :cep => endereco_endereco.zip)
+      endereco.bairro_id = Bairro.find_or_create_by_nome(:nome => endereco_endereco.neighborhood).id
+      endereco.cidade_id = Cidade.find_or_create_by_nome(:nome => endereco_endereco.city).id
+      endereco.estado_id = Estado.find_or_create_by_nome(:nome => endereco_endereco.state).id
+      endereco.save!
+
+      itinerario.endereco = endereco
+      itinerario.distancia = itinerario.distance_to(itinerario_anterior) unless itinerario_anterior.nil?
+      itinerario.save!
+
+      itinerario_anterior = itinerario
+      pbar.inc
+    end
+
+    pbar.finish
+  end
 end

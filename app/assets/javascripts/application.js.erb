@@ -16,11 +16,29 @@
 //= require turbolinks
 //= require js-routes
 //= require jquery-ui-map/jquery.ui.map
+//= require cocoon
 //= require_tree .
 
-function preenche_dias() {
+$(document).on('click', '.js-add_linha', function(e) {
+    linha_id = $(this).data("linha");
+
+    $('#acessos_linhas_pontos').on('cocoon:after-insert', function(f, node) {
+        node.find(".js-linha_select").val(linha_id)
+        altera_itinerario()
+
+        $("#acessos_linhas_pontos").unbind("cocoon:after-insert");
+    })
+
+    $('.js-link_add_linha').trigger('click');
+
+    return false;
+})
+
+function preenche_dias(parent) {
+    linha_id = $(parent).find('.js-linha_select').val();
+
     $.ajax({
-        url: Routes.linha_dias_path($('#js-linha_select').val()),
+        url: Routes.linha_dias_path(linha_id),
         dataType: 'json'
     }).done(function(data) {
         var dias = ''
@@ -28,15 +46,18 @@ function preenche_dias() {
             dias += "<option value='"+dia.id+"' "+ ( dia.today == true ? 'SELECTED' : '' ) +">"+dia.nome+"</option>"
         });
 
-        $('#js-dia_select').html(dias)
+        $(parent).find('.js-dia_select').html(dias)
 
-        preenche_origens();
+        preenche_origens(parent);
     });
 }
 
-function preenche_origens() {
+function preenche_origens(parent) {
+    linha_id = $(parent).find('.js-linha_select').val();
+    dia_id = $(parent).find('.js-dia_select').val();
+
     $.ajax({
-        url: Routes.linha_dia_pontos_path($('#js-linha_select').val(), $('#js-dia_select').val()),
+        url: Routes.linha_dia_pontos_path(linha_id, dia_id),
         dataType: 'json'
     }).done(function(data) {
         var origens = ''
@@ -44,15 +65,19 @@ function preenche_origens() {
             origens += "<option value='"+linha_ponto.ponto.id+"'>"+linha_ponto.ponto.nome+"</option>"
         });
 
-        $('#js-origem_select').html(origens)
+        $(parent).find('.js-origem_select').html(origens)
 
-        preenche_destinos();
+        preenche_destinos(parent);
     });
 }
 
-function preenche_destinos() {
+function preenche_destinos(parent) {
+    linha_id = $(parent).find('.js-linha_select').val();
+    dia_id = $(parent).find('.js-dia_select').val();
+    origem_id = $(parent).find('.js-origem_select').val();
+
     $.ajax({
-        url: Routes.linha_dia_ponto_destinos_path($('#js-linha_select').val(), $('#js-dia_select').val(), $('#js-origem_select').val()),
+        url: Routes.linha_dia_ponto_destinos_path(linha_id, dia_id, origem_id),
         dataType: 'json'
     }).done(function(data) {
         var destinos = ''
@@ -60,33 +85,52 @@ function preenche_destinos() {
             destinos += "<option value='"+linha_ponto.ponto.id+"'>"+linha_ponto.ponto.nome+"</option>"
         });
 
-        $('#js-destino_select').html(destinos)
+        $(parent).find('.js-destino_select').html(destinos)
 
         preenche_horarios();
     });
 }
 
 function preenche_horarios() {
+    var postData = $('#new_acesso').serializeArray();
+    var formURL = $('#new_acesso').attr("action");
+
     $.ajax({
-        url: Routes.linha_dia_ponto_destino_horarios_path($('#js-linha_select').val(), $('#js-dia_select').val(), $('#js-origem_select').val(), $('#js-destino_select').val())
+        url: formURL,
+        data: postData,
+        type: 'POST'
     }).done(function(data) {
         $('#js-horario').html(data)
     });
 }
 
-$(document).on('change', '#js-origem_select', function() {
-    preenche_destinos();
+$(document).on('change', '.js-origem_select', function() {
+    parent = $(this).parents('.nested-fields')
+    preenche_destinos(parent);
 })
 
-$(document).on('change', '#js-dia_select', function() {
-    preenche_origens();
+$(document).on('change', '.js-dia_select', function() {
+    parent = $(this).parents('.nested-fields')
+    preenche_origens(parent);
 })
 
-$(document).on('change', '#js-linha_select', function() {
-    preenche_dias();
+$(document).on('change', '.js-linha_select', function() {
+    parent = $(this).parents('.nested-fields')
+    preenche_dias(parent);
     altera_itinerario();
 })
 
+$(document).on('cocoon:after-remove', function(e, insertedItem) {
+    preenche_dias(insertedItem)
+    altera_itinerario()
+});
+
+$(document).on('cocoon:after-insert', function(e, insertedItem) {
+    preenche_dias(insertedItem)
+});
+
 $(document).ready(function() {
-    preenche_dias();
+    $('.nested-fields').each( function(index, parent) {
+        preenche_dias(parent);
+    });
 })

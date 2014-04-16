@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  linha_id: 
+  ponto_id: 
+  origem_id: 
+  destino_id: 
+  acesso_id: 
+
+two:
+  linha_id: 
+  ponto_id: 
+  origem_id: 
+  destino_id: 
+  acesso_id: 
