@@ -131,6 +131,9 @@ GEM
     turbolinks (2.2.1)
       coffee-rails
     tzinfo (0.3.39)
+    uglifier (2.5.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     xml-simple (1.1.3)
 
 PLATFORMS
@@ -152,4 +155,5 @@ DEPENDENCIES
   simple_form
   turbolinks
   twitter-bootstrap-rails!
+  uglifier
   xml-simple

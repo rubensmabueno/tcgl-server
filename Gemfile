@@ -15,6 +15,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+  gem 'uglifier'
+end
+
 gem 'nokogiri'
 gem 'rest-client'
 gem 'inherited_resources'
