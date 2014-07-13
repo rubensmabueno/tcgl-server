@@ -11,147 +11,161 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140416003051) do
+ActiveRecord::Schema.define(version: 20140413023056) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "acessos", force: true do |t|
+  create_table "accesses", force: true do |t|
     t.string   "ip"
+    t.integer  "line_stop_line_stop_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "acessos_linhas_pontos", force: true do |t|
-    t.integer  "linha_id"
-    t.integer  "dia_id"
-    t.integer  "origem_id"
-    t.integer  "destino_id"
-    t.integer  "acesso_id"
+  add_index "accesses", ["line_stop_line_stop_id"], name: "index_accesses_on_line_stop_line_stop_id", using: :btree
+
+  create_table "accesses_line_stops", force: true do |t|
+    t.integer  "line_id"
+    t.integer  "day_id"
+    t.integer  "origin_id"
+    t.integer  "destination_id"
+    t.integer  "access_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "acessos_linhas_pontos", ["acesso_id"], name: "index_acessos_linhas_pontos_on_acesso_id", using: :btree
-  add_index "acessos_linhas_pontos", ["destino_id"], name: "index_acessos_linhas_pontos_on_destino_id", using: :btree
-  add_index "acessos_linhas_pontos", ["dia_id"], name: "index_acessos_linhas_pontos_on_dia_id", using: :btree
-  add_index "acessos_linhas_pontos", ["linha_id"], name: "index_acessos_linhas_pontos_on_linha_id", using: :btree
-  add_index "acessos_linhas_pontos", ["origem_id"], name: "index_acessos_linhas_pontos_on_origem_id", using: :btree
+  add_index "accesses_line_stops", ["access_id"], name: "index_accesses_line_stops_on_access_id", using: :btree
+  add_index "accesses_line_stops", ["day_id"], name: "index_accesses_line_stops_on_day_id", using: :btree
+  add_index "accesses_line_stops", ["destination_id"], name: "index_accesses_line_stops_on_destination_id", using: :btree
+  add_index "accesses_line_stops", ["line_id"], name: "index_accesses_line_stops_on_line_id", using: :btree
+  add_index "accesses_line_stops", ["origin_id"], name: "index_accesses_line_stops_on_origin_id", using: :btree
 
-  create_table "bairros", force: true do |t|
-    t.string   "nome"
+  create_table "addresses", force: true do |t|
+    t.string   "street"
+    t.string   "number"
+    t.string   "postal_code"
+    t.integer  "neighbourhood_id"
+    t.integer  "city_id"
+    t.integer  "state_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "cidades", force: true do |t|
-    t.string   "nome"
+  add_index "addresses", ["city_id"], name: "index_addresses_on_city_id", using: :btree
+  add_index "addresses", ["neighbourhood_id"], name: "index_addresses_on_neighbourhood_id", using: :btree
+  add_index "addresses", ["state_id"], name: "index_addresses_on_state_id", using: :btree
+
+  create_table "cities", force: true do |t|
+    t.string   "name"
+    t.integer  "state_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "dias", force: true do |t|
-    t.string   "nome"
+  add_index "cities", ["state_id"], name: "index_cities_on_state_id", using: :btree
+
+  create_table "days", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "enderecos", force: true do |t|
-    t.string   "rua"
-    t.string   "numero"
-    t.string   "cep"
-    t.integer  "bairro_id"
-    t.integer  "cidade_id"
-    t.integer  "estado_id"
+  create_table "itineraries", force: true do |t|
+    t.string   "name"
+    t.integer  "to"
+    t.integer  "order"
+    t.decimal  "lat"
+    t.decimal  "lng"
+    t.decimal  "distance"
+    t.integer  "line_id"
+    t.integer  "address_id"
+    t.integer  "stop_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "estados", force: true do |t|
-    t.string   "nome"
+  add_index "itineraries", ["address_id"], name: "index_itineraries_on_address_id", using: :btree
+  add_index "itineraries", ["line_id"], name: "index_itineraries_on_line_id", using: :btree
+  add_index "itineraries", ["stop_id"], name: "index_itineraries_on_stop_id", using: :btree
+
+  create_table "line_stops", force: true do |t|
+    t.integer  "line_id"
+    t.integer  "stop_id"
+    t.integer  "day_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "horarios", force: true do |t|
-    t.time     "partida"
-    t.time     "chegada"
-    t.integer  "linha_ponto_linha_ponto_id"
+  add_index "line_stops", ["day_id"], name: "index_line_stops_on_day_id", using: :btree
+  add_index "line_stops", ["line_id"], name: "index_line_stops_on_line_id", using: :btree
+  add_index "line_stops", ["stop_id"], name: "index_line_stops_on_stop_id", using: :btree
+
+  create_table "line_stops_line_stops", force: true do |t|
+    t.integer  "origin_id"
+    t.integer  "destination_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "line_stops_line_stops", ["destination_id"], name: "index_line_stops_line_stops_on_destination_id", using: :btree
+  add_index "line_stops_line_stops", ["origin_id"], name: "index_line_stops_line_stops_on_origin_id", using: :btree
+
+  create_table "lines", force: true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.integer  "type_line_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "lines", ["type_line_id"], name: "index_lines_on_type_line_id", using: :btree
+
+  create_table "neighbourhoods", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "positions", force: true do |t|
+    t.string   "from"
+    t.string   "to"
+    t.integer  "bus"
+    t.decimal  "lat"
+    t.decimal  "lng"
+    t.integer  "line_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "positions", ["line_id"], name: "index_positions_on_line_id", using: :btree
+
+  create_table "schedules", force: true do |t|
+    t.time     "departure"
+    t.time     "arrive"
+    t.integer  "line_stop_line_stop_id"
     t.string   "via"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "horarios", ["linha_ponto_linha_ponto_id"], name: "index_horarios_on_linha_ponto_linha_ponto_id", using: :btree
+  add_index "schedules", ["line_stop_line_stop_id"], name: "index_schedules_on_line_stop_line_stop_id", using: :btree
 
-  create_table "itinerarios", force: true do |t|
-    t.string   "nome"
-    t.integer  "sentido"
-    t.decimal  "lat"
-    t.decimal  "lng"
-    t.integer  "linha_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "ordem"
-    t.integer  "endereco_id"
-    t.integer  "ponto_id"
-    t.decimal  "distancia"
-  end
-
-  add_index "itinerarios", ["linha_id"], name: "index_itinerarios_on_linha_id", using: :btree
-
-  create_table "linhas", force: true do |t|
-    t.string   "codigo"
-    t.string   "nome"
-    t.integer  "tipo_linha_id"
+  create_table "states", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "linhas", ["tipo_linha_id"], name: "index_linhas_on_tipo_linha_id", using: :btree
-
-  create_table "linhas_pontos", force: true do |t|
-    t.integer  "linha_id"
-    t.integer  "ponto_id"
-    t.integer  "dia_id"
+  create_table "stops", force: true do |t|
+    t.string   "code"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "linhas_pontos", ["dia_id"], name: "index_linhas_pontos_on_dia_id", using: :btree
-  add_index "linhas_pontos", ["linha_id"], name: "index_linhas_pontos_on_linha_id", using: :btree
-  add_index "linhas_pontos", ["ponto_id"], name: "index_linhas_pontos_on_ponto_id", using: :btree
-
-  create_table "linhas_pontos_linhas_pontos", force: true do |t|
-    t.integer  "origem_id"
-    t.integer  "destino_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "linhas_pontos_linhas_pontos", ["destino_id"], name: "index_linhas_pontos_linhas_pontos_on_destino_id", using: :btree
-  add_index "linhas_pontos_linhas_pontos", ["origem_id"], name: "index_linhas_pontos_linhas_pontos_on_origem_id", using: :btree
-
-  create_table "pontos", force: true do |t|
-    t.string   "codigo"
-    t.string   "nome"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "posicoes", force: true do |t|
-    t.string   "de"
-    t.string   "para"
-    t.decimal  "lat"
-    t.decimal  "lng"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "onibus"
-    t.integer  "linha_id"
-  end
-
-  create_table "tipos_linhas", force: true do |t|
-    t.string   "nome"
+  create_table "type_lines", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

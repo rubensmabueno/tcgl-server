@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails tcgl-server: development" uuid="73725a81-9e91-4073-884f-22762abf6b38">
+  <data-source source="LOCAL" name="Rails tcgl-server: development" uuid="662bbf86-1e7b-4e4d-9cf2-67ef695375d9">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
-  <data-source source="LOCAL" name="Rails tcgl-server: test" uuid="2b132eeb-0b26-446d-b5db-735cc10e4a61">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails tcgl-server: production" uuid="a15437f0-fd66-4abe-9b04-55f71504b476">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails projeto: development" uuid="407d57d5-67e2-49c9-9158-74f23da537b0">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails projeto: test" uuid="8da357bc-ec11-451a-83e5-a2f51b042695">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails projeto: production" uuid="d3c3bbdf-4851-4c77-9d9a-9840ec80b8c1">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails gerenciador: development" uuid="29e149d7-837b-483c-9c03-605b351ad953">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails gerenciador: test" uuid="55bae66b-54be-40cd-80bf-f71e3b1e6161">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails gerenciador: production" uuid="74618210-a50b-43f9-b16a-3507cd6fc321">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails portfolio: production" uuid="e442cc18-0815-4b98-a43c-315daf5f581d">
+  <data-source source="LOCAL" name="Rails tcgl-server: test" uuid="5079552a-7b39-4cd4-a451-51d2a6501295">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>

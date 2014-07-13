@@ -1,115 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5eb6cca8-99be-401f-aaf6-d70ec2925bee" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/simple_form_bootstrap.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601153200_create_estados.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601153242_create_paises.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601153736_create_cidades.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130625223702_create_anamnese.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130713014738_create_usuario_admin.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130803143134_create_dificuldade_exercicio.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/log/sunspot-solr-development.log.lck" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3q.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3q.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3q.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3q.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3q.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3q.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3q.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3q.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3r.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3r.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3r.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3r.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3r.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3r.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3r.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3r.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3s.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3s.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3s.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3s.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3s.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3s.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3s.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3s.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3t.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3t.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3t.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3t.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3t.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3t.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3t.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3t.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3u.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3u.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3u.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3u.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3u.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3u.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3u.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/_3u.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/index/segments_3u" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/spellchecker/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../gerenciador/solr/data/development/spellchecker/segments_1" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/.idea/.generators" afterPath="$PROJECT_DIR$/../gerenciador/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130524000913_create_dias.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130524000913_create_dias.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601150013_create_enderecos.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130601150013_create_enderecos.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130626233007_create_avaliacao_perimetros.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130626233007_create_avaliacao_perimetros.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232002_create_fichas.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232002_create_fichas.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232003_create_series_treinos.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232003_create_series_treinos.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232022_create_tipos_exercicios.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232022_create_tipos_exercicios.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232023_create_grupos_musculares.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232023_create_grupos_musculares.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232024_create_exercicios.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232024_create_exercicios.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232025_create_fichas_exercicios.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130730232025_create_fichas_exercicios.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130802000606_create_exemplo_exercicio.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130802000606_create_exemplo_exercicio.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130809013016_create_exercicios_fichas_exercicios.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130809013016_create_exercicios_fichas_exercicios.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/migrate/20130809013216_create_repeticoes_fichas_exercicios.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/migrate/20130809013216_create_repeticoes_fichas_exercicios.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/Gemfile.lock" afterPath="$PROJECT_DIR$/../gerenciador/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/Gemfile" afterPath="$PROJECT_DIR$/../gerenciador/Gemfile" />
+    <list default="true" id="c8ab553a-9a7d-412c-beef-67b9164a5b1b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140404235630_create_days.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140404235631_create_type_lines.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140404235658_create_lines.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140404235732_create_stops.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140404235803_create_line_stops.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140405143257_create_schedule.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140405144727_create_line_stops_line_stops.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140407015836_create_accesses.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140407154205_create_positions.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140407222458_create_itineraries.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140412193253_create_accesses_line_stops.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140413022414_create_states.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140413022415_create_cities.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140413023055_create_neighbouhoods.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140413023056_create_addresses.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/access.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/access_line_stop.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/address.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/backbone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/city.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/database.yml.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/day.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serializers/day_serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/days_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/destinations_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/grande_londrina_parser.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/itineraries.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/models/itinerary.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/itinerary.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/itinerary_list.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serializers/itinerary_serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/models/line.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/line.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/line.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/line_list.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serializers/line_serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/line_stop.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/line_stop_line_stop.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serializers/line_stop_serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/lines.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/lines_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/map.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/marker_list.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/near_line.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/neighbourhood.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/origins_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tasks/grande_londrina/populate.rake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/position.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serializers/position_serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/models/schedule.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/schedule.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/schedule.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/schedule_list.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/serializers/schedule_serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/schedules.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/schedules_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/serializer.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/state.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/stop.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/tcgl_server.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/type_line.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/underscore.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__portfolio.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__portfolio.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/spec__portfolio.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test__portfolio.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/horarios.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/linhas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/pontos.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/horarios.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/linhas.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pontos.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/destinos_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/dias_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/horarios_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/linhas_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/pontos_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/home_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/horarios_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/linhas_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/pontos_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/acesso.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/acesso_linha_ponto.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/bairro.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/cidade.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/dia.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/endereco.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/estado.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/horario.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/itinerario.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/linha.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/linha_ponto.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/linha_ponto_linha_ponto.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/ponto.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/posicao.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/tipo_linha.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/locales/pt-BR.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140404235630_create_dias.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140404235631_create_tipos_linhas.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140404235658_create_linhas.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140404235732_create_pontos.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140404235803_create_linhas_pontos.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140405143257_create_horarios.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140405144727_create_linhas_pontos_linhas_pontos.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140407015836_create_acessos.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140407154205_create_posicoes.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140407215302_change_posicoes.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140407222458_create_itinerarios.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140408015818_change_itinerarios.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140412192919_change_acessos.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140412193253_create_acessos_linhas_pontos.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140413022415_create_cidades.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140413022425_create_estados.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140413023055_create_bairros.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140413023056_create_enderecos.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140413023057_add_enderecos_id_to_itinerarios.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140416003051_add_linha_id_to_posicoes.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tasks/populate.rake" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap_and_overrides.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/home/_acesso_linha_ponto_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_access_line_stop_fields.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/horarios/index.html.erb" afterPath="$PROJECT_DIR$/app/views/schedules/index.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/acessos.yml" afterPath="$PROJECT_DIR$/test/fixtures/access.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/acessos_linhas_pontos.yml" afterPath="$PROJECT_DIR$/test/fixtures/access_line_stops.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/bairros.yml" afterPath="$PROJECT_DIR$/test/fixtures/citys.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/cidades.yml" afterPath="$PROJECT_DIR$/test/fixtures/days.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/dias.yml" afterPath="$PROJECT_DIR$/test/fixtures/neighbourhoods.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/enderecos.yml" afterPath="$PROJECT_DIR$/test/fixtures/address.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/estados.yml" afterPath="$PROJECT_DIR$/test/fixtures/states.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/horarios.yml" afterPath="$PROJECT_DIR$/test/fixtures/schedules.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/itinerarios.yml" afterPath="$PROJECT_DIR$/test/fixtures/itinerarys.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/linhas.yml" afterPath="$PROJECT_DIR$/test/fixtures/lines.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/linhas_pontos.yml" afterPath="$PROJECT_DIR$/test/fixtures/line_stops.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/linhas_pontos_linhas_pontos.yml" afterPath="$PROJECT_DIR$/test/fixtures/line_stop_line_stops.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/pontos.yml" afterPath="$PROJECT_DIR$/test/fixtures/stops.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/posicoes.yml" afterPath="$PROJECT_DIR$/test/fixtures/positions.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/tipos_linhas.yml" afterPath="$PROJECT_DIR$/test/fixtures/type_lines.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__tcgl_server.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__tcgl_server.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/emails/_emails_form.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/emails/_emails_form.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/enderecos/_enderecos_form.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/enderecos/_enderecos_form.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/fichas/_exercicios_fichas_exercicios_form.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/fichas/_exercicios_fichas_exercicios_form.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/fichas/_fichas_exercicios_form.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/fichas/_fichas_exercicios_form.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/clientes/_form.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/clientes/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/_form.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/fichas/_form.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/fichas/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/telefones/_telefones_form.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/telefones/_telefones_form.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/database.yml" afterPath="$PROJECT_DIR$/../gerenciador/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/models/exemplo_exercicio.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/models/exemplo_exercicio.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/models/exercicio.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/models/exercicio.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/controllers/exercicios_controller.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/controllers/exercicios_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/models/ficha.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/models/ficha.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/models/ficha_exercicio.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/models/ficha_exercicio.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/controllers/fichas_controller.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/controllers/fichas_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/.idea/gerenciador.iml" afterPath="$PROJECT_DIR$/../gerenciador/.idea/gerenciador.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/models/grupo_muscular.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/models/grupo_muscular.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/clientes/index.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/clientes/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/index.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/fichas/index.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/fichas/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/initializers/inflections.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/clientes/new.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/clientes/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/postagens.css" afterPath="$PROJECT_DIR$/../gerenciador/app/assets/stylesheets/postagens.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/routes.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/schema.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/solr/conf/schema.xml" afterPath="$PROJECT_DIR$/../gerenciador/solr/conf/schema.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/../gerenciador/config/initializers/secret_token.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/db/seeds.rb" afterPath="$PROJECT_DIR$/../gerenciador/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/models/serie_treino.rb" afterPath="$PROJECT_DIR$/../gerenciador/app/models/serie_treino.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/show.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/exercicios/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/app/views/fichas/show.html.erb" afterPath="$PROJECT_DIR$/../gerenciador/app/views/fichas/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/solr/conf/solrconfig.xml" afterPath="$PROJECT_DIR$/../gerenciador/solr/conf/solrconfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/config/sunspot.yml" afterPath="$PROJECT_DIR$/../gerenciador/config/sunspot.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gerenciador/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../gerenciador/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/bundle" afterPath="$PROJECT_DIR$/bin/bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rails" afterPath="$PROJECT_DIR$/bin/rails" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rake" afterPath="$PROJECT_DIR$/bin/rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tcgl-server.iml" afterPath="$PROJECT_DIR$/.idea/tcgl-server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tcgl-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,7 +194,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/tcgl-server@Development__tcgl_server.coverage" NAME="Development: tcgl-server Coverage Results" MODIFIED="1405295430843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tcgl-server" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -132,28 +210,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
+      <file leaf-file-name="line.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/line.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="27" selection-start="764" selection-end="764" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="2556">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="2196">
+              <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+              <folding>
+                <marker date="1405295189434" expanded="true" signature="1720:2147" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt-BR.default.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/pt-BR.default.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3267" max-vertical-offset="3888">
+              <caret line="210" column="17" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="pt-BR.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/locales/pt-BR.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="132" selection-start="2399" selection-end="2399" vertical-scroll-proportion="-13.333333" vertical-offset="378" max-vertical-offset="5580">
+            <state vertical-scroll-proportion="0.077809796" vertical-offset="0" max-vertical-offset="694">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="_access_line_stop_fields.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/_access_line_stop_fields.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="15" selection-start="433" selection-end="433" vertical-scroll-proportion="0.5134707" vertical-offset="0" max-vertical-offset="900">
+            <state vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="648">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -163,7 +256,7 @@
   </component>
   <component name="FindManager">
     <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
+      <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
@@ -172,65 +265,73 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/vendor/assets/javascripts/markerwithlabel.js" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/db/migrate/20140408015818_change_itinerarios.rb" />
-        <option value="$PROJECT_DIR$/app/views/horarios/index.html.erb" />
-        <option value="$PROJECT_DIR$/../portfolio/Gemfile" />
-        <option value="$PROJECT_DIR$/../portfolio/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/../portfolio/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/../portfolio/app/assets/stylesheets/application.css.erb" />
-        <option value="$PROJECT_DIR$/../portfolio/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/../projeto/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/../prohauser/app/assets/javascripts/mensagens.js" />
-        <option value="$PROJECT_DIR$/../prohauser/app/assets/javascripts/indicadores.js.erb" />
-        <option value="$PROJECT_DIR$/../prohauser/app/controllers/mensagens_controller.rb" />
-        <option value="$PROJECT_DIR$/../prohauser/app/controllers/indicadores_alarmes_emitidos_controller.rb" />
-        <option value="$PROJECT_DIR$/../prohauser/app/models/mensagem.rb" />
-        <option value="$PROJECT_DIR$/../prohauser/app/models/usuario.rb" />
-        <option value="$PROJECT_DIR$/../prohauser/app/models/empresa.rb" />
-        <option value="$PROJECT_DIR$/../prohauser/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/../prohauser/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140412192919_change_acessos.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140412192924_create_acessos_linhas_pontos.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/inflections.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/simple_form_bootstrap3.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/_acessos_linhas_pontos.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140412193253_create_acessos_linhas_pontos.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/_acessos_linhas_pontos_fields.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/acesso.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/acesso_linha_ponto.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/horarios_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/itinerarios_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140413020404_add_enderecos_id_to_itinerarios.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140413020311_create_enderecos.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140413022426_create_enderecos.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140413023056_create_enderecos.rb" />
-        <option value="$APPLICATION_HOME_DIR$/rubystubs20/kernel.rb" />
-        <option value="$PROJECT_DIR$/app/models/estado.rb" />
-        <option value="$PROJECT_DIR$/app/models/endereco.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/geokit.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/populate.rake" />
-        <option value="$PROJECT_DIR$/app/models/itinerario.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140416003051_add_linha_id_to_posicoes.rb" />
-        <option value="$PROJECT_DIR$/app/models/posicao.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/linhas_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/_acesso_linha_ponto_fields.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
+        <option value="$PROJECT_DIR$/lib/tasks/grande_londrina/populate.rake" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/line.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/day.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/model/line.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/line.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/home/_access_line_stop_fields.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/destinies_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/line.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/day.rb" />
+        <option value="$PROJECT_DIR$/app/serializers/day_serializer.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/serializer.rb" />
+        <option value="$PROJECT_DIR$/app/serializers/line_stop_serializer.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/origins_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/days_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/destinations_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/line_stop.rb" />
+        <option value="$PROJECT_DIR$/app/models/line_stop_line_stop.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/schedules_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/schedule.js.coffee" />
+        <option value="$PROJECT_DIR$/app/models/schedule.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/line_list.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/map.js.coffee" />
+        <option value="$PROJECT_DIR$/vendor/assets/javascripts/underscore.js" />
+        <option value="$PROJECT_DIR$/app/models/itinerary.rb" />
+        <option value="$PROJECT_DIR$/app/serializers/itinerary_serializer.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/itineraries.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/models/line.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/lines.js.coffee" />
+        <option value="$PROJECT_DIR$/app/serializers/position_serializer.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/lib/grande_londrina_parser.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/lines_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/marker.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/marker_list.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/tcgl_server.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/schedule.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/models/itinerary.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/models/schedule.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/schedules.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/itinerary_list.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/schedule_list.js.coffee" />
+        <option value="$PROJECT_DIR$/app/serializers/schedule_serializer.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/line.js.coffee" />
+        <option value="$PROJECT_DIR$/config/locales/pt-BR.yml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="width" value="1922" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -244,7 +345,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -257,7 +358,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,46 +373,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,28 +405,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="locales" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -423,6 +461,20 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -441,44 +493,8 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcgl-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -521,33 +537,101 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcgl-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="project.settings.patched" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../codeminer42/alavadeira" />
+    <property name="options.lastSelected" value="fileColors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="SearchEverywhereHistory" value="d" />
+    <property name="LayoutCode.rearrangeEntriesRHTML" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/controllers" />
-      <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/../tcgl-website/app/models" />
-      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/config/locales" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/backbone/views" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/backbone/collections" />
+      <recent name="$PROJECT_DIR$/app/controllers" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/backbone/model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/backbone/views" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: tcgl-server">
@@ -629,6 +713,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
@@ -652,7 +737,7 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
@@ -679,56 +764,78 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Rails.Development: portfolio" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Production: portfolio" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec: portfolio" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test: portfolio" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Development: tcgl-server" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Production: tcgl-server" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.spec: tcgl-server" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.test: tcgl-server" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Rake.test: tcgl-server" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec: tcgl-server" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: tcgl-server" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: tcgl-server" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5eb6cca8-99be-401f-aaf6-d70ec2925bee" name="Default" comment="" />
-      <created>1396655398746</created>
-      <updated>1396655398746</updated>
+      <changelist id="c8ab553a-9a7d-412c-beef-67b9164a5b1b" name="Default" comment="" />
+      <created>1402282269855</created>
+      <updated>1402282269855</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33602422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30511183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28221512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2536232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33436853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285124" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2657082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout>
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44938016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -741,288 +848,374 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/controllers/indicadores_alarmes_emitidos_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="117" selection-end="117" vertical-scroll-proportion="0.057507988" vertical-offset="0" max-vertical-offset="626" />
+        <state vertical-scroll-proportion="0.17821783" vertical-offset="0" max-vertical-offset="505">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/controllers/mensagens_controller.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.2/gems/activemodel-4.1.1/lib/active_model/serialization.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="11" selection-start="103" selection-end="103" vertical-scroll-proportion="0.056338027" vertical-offset="0" max-vertical-offset="639" />
+        <state vertical-scroll-proportion="2.621782" vertical-offset="1340" max-vertical-offset="3042">
+          <caret line="148" column="58" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/models/f8x14_rede_coletor.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/serializer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="100" selection-start="223" selection-end="247" vertical-scroll-proportion="0.08450704" vertical-offset="0" max-vertical-offset="639" />
+        <state vertical-scroll-proportion="0.11612903" vertical-offset="0" max-vertical-offset="620">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/models/perfil_acesso.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/position.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="505">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/models/usuario.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/origins_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="105" selection-start="661" selection-end="661" vertical-scroll-proportion="0.22535211" vertical-offset="0" max-vertical-offset="639" />
+        <state vertical-scroll-proportion="0.21386139" vertical-offset="0" max-vertical-offset="505">
+          <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/models/empresa.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/day.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="609" selection-end="609" vertical-scroll-proportion="0.16901408" vertical-offset="0" max-vertical-offset="639" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="505">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/models/f8x14_coletor_pinagem.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/days_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="61" selection-end="76" vertical-scroll-proportion="0.028753994" vertical-offset="0" max-vertical-offset="626" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/assets/javascripts/indicadores_alarmes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="639" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/assets/javascripts/indicadores_graficos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="639" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0989011" vertical-offset="459" max-vertical-offset="1746" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/assets/javascripts/f8x14_coletores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="639" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/assets/javascripts/indicadores.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="-0.112227805" vertical-offset="211" max-vertical-offset="810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/assets/javascripts/mensagens.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="2" selection-end="1347" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="864" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../prohauser/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="89" selection-start="227" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="3258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140407015836_create_acessos.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="964" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="48" selection-start="3178" selection-end="3178" vertical-scroll-proportion="0.85915494" vertical-offset="927" max-vertical-offset="1602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tipo_linha.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.08450704" vertical-offset="0" max-vertical-offset="639" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/simple_form_bootstrap3.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="3" selection-start="2990" selection-end="2990" vertical-scroll-proportion="2.3290734" vertical-offset="162" max-vertical-offset="1728" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140412193253_create_acessos_linhas_pontos.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="180" selection-end="180" vertical-scroll-proportion="0.112676054" vertical-offset="0" max-vertical-offset="639" />
+        <state vertical-scroll-proportion="0.115755625" vertical-offset="0" max-vertical-offset="622">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414" />
+        <state vertical-scroll-proportion="0.051948052" vertical-offset="0" max-vertical-offset="693">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/acesso.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/access.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="244" selection-end="244" vertical-scroll-proportion="0.22535211" vertical-offset="0" max-vertical-offset="639" />
+        <state vertical-scroll-proportion="0.12987013" vertical-offset="0" max-vertical-offset="693">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/acesso_linha_ponto.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/destinations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="47" selection-start="431" selection-end="431" vertical-scroll-proportion="0.30985916" vertical-offset="0" max-vertical-offset="639" />
+        <state vertical-scroll-proportion="0.20779221" vertical-offset="0" max-vertical-offset="693">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="16" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/horarios/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="639" />
+        <state vertical-scroll-proportion="0.34343433" vertical-offset="122" max-vertical-offset="2574">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/horarios_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/line_stop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="67" selection-start="188" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="671">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/line_stop_line_stop.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025974026" vertical-offset="0" max-vertical-offset="693">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/schedule.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025974026" vertical-offset="0" max-vertical-offset="693">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/map.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6056338" vertical-offset="1719" max-vertical-offset="2412">
+          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/line_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/day_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02538787" vertical-offset="0" max-vertical-offset="709">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/line_stop_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07616361" vertical-offset="0" max-vertical-offset="709">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/underscore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33286318" vertical-offset="556" max-vertical-offset="24228">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02586207" vertical-offset="0" max-vertical-offset="4176">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/itinerary.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/itinerary_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="292" selection-end="292" vertical-scroll-proportion="0.2053942" vertical-offset="0" max-vertical-offset="964" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/simple_form.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2718" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140408015818_change_itinerarios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="62" selection-end="139" vertical-scroll-proportion="0.029363785" vertical-offset="0" max-vertical-offset="613" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140412192919_change_acessos.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="58" selection-end="58" vertical-scroll-proportion="0.028346457" vertical-offset="0" max-vertical-offset="635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140413023057_add_enderecos_id_to_itinerarios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="208" selection-end="208" vertical-scroll-proportion="0.14173229" vertical-offset="0" max-vertical-offset="635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140413022415_create_cidades.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="964" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140413023056_create_enderecos.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="158" selection-end="158" vertical-scroll-proportion="0.14173229" vertical-offset="0" max-vertical-offset="635" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/kernel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="466" column="8" selection-start="17938" selection-end="17938" vertical-scroll-proportion="0.33228347" vertical-offset="8177" max-vertical-offset="37566" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/estado.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/endereco.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/geokit.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="241" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/populate.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="13" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.18971062" vertical-offset="2042" max-vertical-offset="2790" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="8" selection-start="1283" selection-end="1287" vertical-scroll-proportion="-7.4814816" vertical-offset="716" max-vertical-offset="2898">
+        <state vertical-scroll-proportion="0.17391305" vertical-offset="0" max-vertical-offset="621">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/itinerario.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding />
+        <state vertical-scroll-proportion="0.5462428" vertical-offset="0" max-vertical-offset="692">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140416003051_add_linha_id_to_posicoes.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/near_line.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="124" selection-end="124" vertical-scroll-proportion="0.08503937" vertical-offset="0" max-vertical-offset="635">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140407215302_change_posicoes.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/collections/lines.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="8" selection-start="55" selection-end="130" vertical-scroll-proportion="0.028346457" vertical-offset="0" max-vertical-offset="635">
-          <folding />
+        <state vertical-scroll-proportion="0.078034684" vertical-offset="0" max-vertical-offset="692">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/position_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10404624" vertical-offset="0" max-vertical-offset="692">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/schedules_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2601156" vertical-offset="0" max-vertical-offset="692">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="15" selection-start="871" selection-end="871" vertical-scroll-proportion="0.5150555" vertical-offset="359" max-vertical-offset="1044">
+        <state vertical-scroll-proportion="0.37572256" vertical-offset="370" max-vertical-offset="1062">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/line_list.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.851851" vertical-offset="428" max-vertical-offset="1566">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/schedules/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6766917" vertical-offset="0" max-vertical-offset="665">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grande_londrina_parser.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1300578" vertical-offset="0" max-vertical-offset="2088">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/lines_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23410405" vertical-offset="0" max-vertical-offset="692">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/backbone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33236995" vertical-offset="11218" max-vertical-offset="29052">
+          <caret line="636" column="4" selection-start-line="636" selection-start-column="4" selection-end-line="636" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/tcgl_server.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/itinerary.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/schedule.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23410405" vertical-offset="0" max-vertical-offset="692">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/collections/schedules.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18208092" vertical-offset="0" max-vertical-offset="692">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/collections/itineraries.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28612718" vertical-offset="0" max-vertical-offset="692">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/line.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41618496" vertical-offset="0" max-vertical-offset="692">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/schedule.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/schedule_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02589928" vertical-offset="0" max-vertical-offset="695">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/simple_form.en.yml">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/schedule_list.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="631">
+        <state vertical-scroll-proportion="0.37518036" vertical-offset="46" max-vertical-offset="1062">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_acesso_linha_ponto_fields.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/itinerary_list.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="66" selection-start="513" selection-end="513" vertical-scroll-proportion="0.33502537" vertical-offset="0" max-vertical-offset="648">
+        <state vertical-scroll-proportion="0.15584415" vertical-offset="0" max-vertical-offset="693">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/marker_list.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/line.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="2196">
+          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+          <folding>
+            <marker date="1405295189434" expanded="true" signature="1720:2147" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/pt-BR.default.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3267" max-vertical-offset="3888">
+          <caret line="210" column="17" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="180" selection-end="669" vertical-scroll-proportion="0.09137056" vertical-offset="0" max-vertical-offset="648">
+        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="1188">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/posicao.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/home/_access_line_stop_fields.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="49" selection-end="54" vertical-scroll-proportion="0.02852615" vertical-offset="0" max-vertical-offset="631">
+        <state vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="648">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/linhas_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/locales/pt-BR.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="191" selection-start="614" selection-end="631" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="1296">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="764" selection-end="764" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="2556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="132" selection-start="2399" selection-end="2399" vertical-scroll-proportion="-13.333333" vertical-offset="378" max-vertical-offset="5580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="15" selection-start="433" selection-end="433" vertical-scroll-proportion="0.5134707" vertical-offset="0" max-vertical-offset="900">
+        <state vertical-scroll-proportion="0.077809796" vertical-offset="0" max-vertical-offset="694">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
       </provider>

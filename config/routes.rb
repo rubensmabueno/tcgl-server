@@ -1,20 +1,19 @@
-TcglServer::Application.routes.draw do
+Rails.application.routes.draw do
   root :to => "home#index"
 
   resources :home
-  resources :horarios do
-    post :index, :on => :collection
-  end
 
-  resources :linhas do
-    post :posicoes, :on => :collection
-    post :partidas, :on => :collection
-    post :chegadas, :on => :collection
-    post :itinerarios, :on => :collection
+  resources :lines, :only => [:index, :show] do
+    get :positions, :on => :collection
+    get :itineraries, :on => :member
 
-    resources :dias do
-      resources :pontos do
-        resources :destinos
+    get :near_stops, :on => :collection
+
+    resources :days, :only => :index do
+      resources :origins, :only => :index do
+        resources :destinations, :only => :index do
+          resources :schedules, :only => :index
+        end
       end
     end
   end

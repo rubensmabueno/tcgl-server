@@ -12,35 +12,44 @@
     <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
-    <![endif]-->
-
     <%= stylesheet_link_tag "application", :media => "all" %>
 
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <!-- Size should be 144 x 144 pixels -->
     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
-
-    <!-- For iPhone with high-resolution Retina display: -->
-    <!-- Size should be 114 x 114 pixels -->
     <%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
-
-    <!-- For first- and second-generation iPad: -->
-    <!-- Size should be 72 x 72 pixels -->
     <%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
-
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <!-- Size should be 57 x 57 pixels -->
     <%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
-
-    <!-- For all other devices -->
-    <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+  </head>
+  <body>
 
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><%= image_tag 'bandeira.png' %> LondrinaBus</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "by Rubens Minoru Andako Bueno", "http://www.rubensminoru.com" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="bottom-float-right">
+        <div class="alert alert-danger">Experimente um click duplo no mapa. ;) Arraste-o a vontade.</div>
+      </div>
+
+      <%= yield %>
+    </div> <!-- /container -->
+
+    <!-- Javascripts
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCIf92tKGJQKwmv6KQj14kkN3Wgw8sp3KY&sensor=false" %>
-    <%= javascript_include_tag "application" %>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -66,239 +75,7 @@
         })();
     </script>
 
-    <script type="text/javascript">
-        var markers = []
-        var itinerarios = []
-        var map
-
-        var marker_ida
-        var marker_volta
-        var circle_ida
-        var circle_volta
-
-        function linhas_id() {
-            ids = new Array();
-            $.each( $('.js-linha_select:visible'), function(index, linha) {
-                ids.push($(linha).val());
-            });
-
-            return ids;
-        }
-
-        function poll(){
-            setTimeout(function(){
-                $.ajax({
-                    url: Routes.posicoes_linhas_path(),
-                    data: { 'linhas_id[]': linhas_id() },
-                    type: 'POST',
-                    dataType: "json",
-                    success: function(data) {
-                        add_markers(data);
-                        poll();
-                    }
-                });
-            }, 10000);
-        };
-
-        function add_markers(posicoes) {
-            markers.forEach(function(marker) { marker.setMap(null); })
-            markers = []
-
-            posicoes.forEach(function(posicao) {
-                markers[posicao.id] = new MarkerWithLabel({
-                    map: map,
-                    position: new google.maps.LatLng(posicao.lat, posicao.lng),
-                    labelContent: ( posicao.linha.nome + " <br>Para: " + posicao.para ),
-                    labelAnchor: new google.maps.Point(0, 0),
-                    labelClass: "label-marker", // the CSS class for the label
-                    labelStyle: {opacity: 0.75}
-                });
-            })
-        }
-
-        function altera_itinerario() {
-            itinerarios.forEach(function(itinerario) { itinerario.setMap(null); })
-            itinerarios = []
-
-            $.ajax({
-                url: Routes.itinerarios_linhas_path(),
-                data: { 'linhas_id[]': linhas_id() },
-                type: 'POST',
-                dataType: 'json'
-            }).done(function(data) {
-                $.ajax({
-                    url: Routes.posicoes_linhas_path(),
-                    data: { 'linhas_id[]': linhas_id() },
-                    type: 'POST',
-                    dataType: "json",
-                    success: function(data) {
-                        add_markers(data);
-                    }
-                });
-
-                $.each(data, function(index1, itinerario_linhas) {
-                    $.each(itinerario_linhas, function(index2, itinerario_sentidos) {
-                        itinerarios_ida = []
-                        $.each(itinerario_sentidos, function(index3, itinerario) {
-                            itinerarios_ida.push(new google.maps.LatLng(itinerario.lat, itinerario.lng))
-                            color = itinerario.color;
-                        })
-
-                        itinerarios.push( new google.maps.Polyline({
-                            map: map,
-                            path: itinerarios_ida,
-                            strokeColor: color,
-                            strokeWeight: 2
-                        }));
-                    });
-                })
-            });
-        }
-
-        function initialize() {
-            var myOptions = {
-                zoom: 14,
-                maxZoom: 16,
-                minZoom: 1,
-                streetViewControl: false,
-                center: new google.maps.LatLng(-23.307895, -51.161442),
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
-            poll();
-            altera_itinerario();
-
-            google.maps.event.addListener(map, "dblclick", function (mEvent) {
-                if(marker_ida == null) {
-                    marker_ida = new MarkerWithLabel({
-                        map: map,
-                        position: mEvent.latLng,
-                        labelContent: ( "Partida" ),
-                        labelAnchor: new google.maps.Point(0, 0),
-                        labelClass: "label-marker", // the CSS class for the label
-                        draggable:true,
-                        labelStyle: {opacity: 0.75}
-                    });
-
-                    calcula_partida();
-
-                    google.maps.event.addListener( marker_ida, 'dragend', function() {
-                        calcula_partida();
-                    });
-                } else if(marker_volta == null) {
-                    marker_volta = new MarkerWithLabel({
-                        map: map,
-                        position: mEvent.latLng,
-                        labelContent: ( "Chegada" ),
-                        labelAnchor: new google.maps.Point(0, 0),
-                        labelClass: "label-marker", // the CSS class for the label
-                        draggable:true,
-                        labelStyle: {opacity: 0.75}
-                    });
-
-                    calcula_chegada();
-
-                    google.maps.event.addListener( marker_volta, 'dragend', function() {
-                        calcula_chegada();
-                    });
-                }
-            });
-        }
-
-        function calcula_partida() {
-            if(circle_ida != undefined) {
-                circle_ida.setMap(null);
-            } else {
-                $('#map-canvas').parent('.col-md-12').removeClass('col-md-12').addClass('col-md-9')
-                $('.js-onibus_partida_chegada').removeClass('hidden')
-            }
-
-            $.ajax({
-                url: Routes.partidas_linhas_path(),
-                data: { posicao_partida: { lat: marker_ida.getPosition().lat(), lng: marker_ida.getPosition().lng() } },
-                dataType: "json",
-                method: 'POST',
-                success: function(data) {
-                    circle_ida = new google.maps.Circle({
-                        strokeColor: '#FF0000',
-                        strokeOpacity: 0.8,
-                        strokeWeight: 2,
-                        fillColor: '#FF0000',
-                        fillOpacity: 0.35,
-                        map: map,
-                        center: marker_ida.getPosition(),
-                        radius: data['distancia'] * 1000
-                    });
-
-                    linhas_partidas = ''
-
-                    data['itinerario'].forEach(function(linha) {
-                        linhas_partidas += '<a href="#" class="js-add_linha" data-linha="' + linha.id + '"><icon class="fa fa-plus"></i></a> ' + linha.codigo_nome + '<br />'
-                    });
-                    $('.js-onibus_partida').html(linhas_partidas);
-                }
-            });
-        }
-
-        function calcula_chegada() {
-            if(circle_volta != undefined) {
-                circle_volta.setMap(null);
-            }
-
-            $.ajax({
-                url: Routes.chegadas_linhas_path(),
-                data: { posicao_partida: { lat: marker_ida.getPosition().lat(), lng: marker_ida.getPosition().lng() }, posicao_chegada: { lat: marker_volta.getPosition().lat(), lng: marker_volta.getPosition().lng() } },
-                dataType: "json",
-                method: 'POST',
-                success: function(data) {
-                    circle_volta = new google.maps.Circle({
-                        strokeColor: '#FF0000',
-                        strokeOpacity: 0.8,
-                        strokeWeight: 2,
-                        fillColor: '#FF0000',
-                        fillOpacity: 0.35,
-                        map: map,
-                        center: marker_volta.getPosition(),
-                        radius: data['distancia'] * 1000
-                    });
-
-                    linhas_chegadas = ''
-                    data['itinerario'].forEach(function(linha) {
-                        linhas_chegadas += '<a href="#" class="js-add_linha" data-linha="' + linha.id + '"><icon class="fa fa-plus"></i></a> ' + linha.codigo_nome + '<br />'
-                    });
-                    $('.js-onibus_chegada').html(linhas_chegadas);
-                }
-            });
-        }
-
-        window.onload = initialize;
-    </script>
-  </head>
-  <body>
-
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><%= image_tag 'bandeira.png' %> LondrinaBus</a>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "by Rubens Minoru Andako Bueno", "http://www.rubensminoru.com" %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="bottom-float-right">
-        <div class="alert alert-danger">Experimente um click duplo no mapa. ;) Arraste-o a vontade.</div>
-      </div>
-
-      <%= bootstrap_flash %>
-      <%= yield %>
-    </div> <!-- /container -->
+    <%= javascript_include_tag "application" %>
+    <%= yield :javascripts %>
   </body>
 </html>

@@ -1,0 +1,31 @@
+<div class="nested-fields">
+  <div class="row">
+    <div class="col-md-11">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <%= f.input :line_id, :collection => Line.all.map { |e| [e.code_name, e.id] }, :include_blank => false, :input_html => { :class => "form-control js-line_select" } %>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <%= f.input :day_id, :as => :select, :input_html => { :class => "form-control js-day_select" } %>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <%= f.input :origin_id, :as => :select, :input_html => { :class => "form-control js-origin_select" } %>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <%= f.input :destination_id, :as => :select, :input_html => { :class => "form-control js-destination_select" } %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <%= link_to_remove_association "x", f, :class => 'btn btn-danger btn-block margin-top-25px' %>
+    </div>
+  </div>
+</div>

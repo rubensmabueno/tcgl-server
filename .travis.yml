@@ -1,0 +1,10 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.1.2
+before_script:
+  - cp config/database.yml.sample config/database.yml
+  - bundle exec rake db:create db:migrate db:test:prepare
+script:
+  - bundle exec rake spec
+  - RAILS_ENV=production bundle exec rake assets:precompile

@@ -1,11 +1,11 @@
-<%= simple_form_for @acesso, :url => horarios_path do |f| %>
+<%= simple_form_for @acesso, url: '' do |f| %>
     <div id="acessos_linhas_pontos">
-        <%= f.simple_fields_for :acessos_linhas_pontos do |acesso_linha_ponto| %>
-            <%= render 'acesso_linha_ponto_fields', :f => acesso_linha_ponto %>
-        <% end %>
+      <%= f.simple_fields_for :accesses_line_stops do |access_line_stop| %>
+          <%= render 'access_line_stop_fields', :f => access_line_stop %>
+      <% end %>
     </div>
 
-    <%= link_to_add_association 'Nova Busca', f, :acessos_linhas_pontos, :'data-association-insertion-node' => '#acessos_linhas_pontos', :'data-association-insertion-method' => 'append', :class => 'btn btn-default btn-block js-link_add_linha margin-bottom-10px' %>
+    <%= link_to_add_association 'Nova Busca', f, :accesses_line_stops, :'data-association-insertion-node' => '#acessos_linhas_pontos', :'data-association-insertion-method' => 'append', :class => 'btn btn-default btn-block js-link_add_linha margin-bottom-10px' %>
 <% end %>
 
 <div class="row margin-bottom-10px">
@@ -16,16 +16,45 @@
   <div class="row js-onibus_partida_chegada col-md-3 hidden">
     <div class="col-md-12">
       <h4>Linhas Partida</h4>
+
       <p class="js-onibus_partida"></p>
     </div>
     <div class="col-md-12">
       <h4>Linhas Chegada</h4>
+
       <p class="js-onibus_chegada"></p>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-12" id="js-horario">
+<div class="schedule-table row">
+  <div class="col-md-6">
+    <table class="table table-condensed" id="js-schedule-1">
+      <thead>
+      <tr>
+        <th>Linha</th>
+        <th>Partida</th>
+        <th>Destino</th>
+        <th>Via</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col-md-6">
+    <table class="table table-condensed" id="js-schedule-2">
+      <thead>
+      <tr>
+        <th>Linha</th>
+        <th>Partida</th>
+        <th>Destino</th>
+        <th>Via</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
   </div>
 </div>
