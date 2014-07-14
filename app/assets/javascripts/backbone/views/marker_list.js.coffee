@@ -27,17 +27,18 @@ class App.Views.MarkerList extends Backbone.View
         @pollPosition() if recurrent
     }
 
-  addMarkers: (markers) ->
+  addMarkers: (markersArray) ->
     _.each @markers, (marker) ->
       marker.setMap(null)
     @markers = []
 
-    _.each markers, (marker) ->
-      markers.push new MarkerWithLabel {
-        map: App.Views.Map.getMap(),
-        position: new google.maps.LatLng(marker.lat, marker.lng),
-        labelContent: ( marker.line_name + " <br>Para: " + marker.to ),
-        labelAnchor: new google.maps.Point(0, 0),
-        labelClass: "label-marker",
-        labelStyle: {opacity: 0.75}
-      }
+    _.each markersArray, (markers) =>
+      _.each markers, (marker) =>
+        @markers.push new MarkerWithLabel {
+          map: App.Views.Map.getMap(),
+          position: new google.maps.LatLng(marker.lat, marker.lng),
+          labelContent: ( marker.line_name + " <br>Para: " + marker.to ),
+          labelAnchor: new google.maps.Point(0, 0),
+          labelClass: "label-marker",
+          labelStyle: {opacity: 0.75}
+        }
