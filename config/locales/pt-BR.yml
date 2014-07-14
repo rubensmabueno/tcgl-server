@@ -1,0 +1,8 @@
+pt-BR:
+  activerecord:
+    attributes:
+      access_line_stop:
+        line_id: Linha
+        day_id: Dia
+        origin_id: Origem
+        destination_id: Destino
