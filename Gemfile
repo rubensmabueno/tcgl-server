@@ -15,6 +15,7 @@ gem 'progressbar'
 gem 'unicorn'
 gem 'nokogiri'
 gem 'active_model_serializers'
+gem 'sidekiq'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
