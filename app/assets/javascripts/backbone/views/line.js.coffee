@@ -73,11 +73,11 @@ class App.Views.Line extends Backbone.View
     _.each days, (day) =>
       dayEl = $("<option />").val(day.id).text(day.name)
 
-      if moment().day() > 0 and moment().day() < 6 and day.id == 0
+      if moment().day() > 0 and moment().day() < 6 and day.id == 1
         dayEl.prop('selected', 'selected')
-      else if moment().day() == 6 and day.id == 1
+      else if moment().day() == 6 and day.id == 2
         dayEl.prop('selected', 'selected')
-      else
+      else if moment().day() == 7 and day.id == 3
         dayEl.prop('selected', 'selected')
 
       @daySelect.append(dayEl)
