@@ -6,12 +6,15 @@ module GrandeLondrinaParser
 
     positionsClient.each_with_index do |position, index|
       unless position.size < 4
-        positions << Position.new(:from => position[1].split("-->").last,
-                                  :to => position[2].split("Indo para: ").last,
-                                  :lat => position[3].to_f,
-                                  :lng => position[4].to_f,
-                                  :bus => index,
-                                  :line => line)
+        attributes = { :from => position[1].split("-->").last,
+                       :to => position[2].split("Indo para: ").last,
+                       :lat => position[3].to_f,
+                       :lng => position[4].to_f,
+                       :bus => index,
+                       :line_id => line.id }
+
+        positions << Position.new(attributes)
+        PositionLogWorker.perform_async(attributes)
       end
     end
 

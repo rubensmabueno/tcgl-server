@@ -11,19 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140413023056) do
+ActiveRecord::Schema.define(version: 20140717030051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "accesses", force: true do |t|
     t.string   "ip"
-    t.integer  "line_stop_line_stop_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "line_id"
+    t.integer  "day_id"
+    t.integer  "origin_id"
+    t.integer  "destination_id"
   end
-
-  add_index "accesses", ["line_stop_line_stop_id"], name: "index_accesses_on_line_stop_line_stop_id", using: :btree
 
   create_table "accesses_line_stops", force: true do |t|
     t.integer  "line_id"

@@ -8,6 +8,12 @@ class SchedulesController < DestinationsController
 
     schedules = LineStopLineStop.by_line(line).by_day(day).by_origin(origin).by_destination(destination).first.schedules
 
+    AccessLogWorker.perform_async({ip: request.remote_ip,
+                                   line_id: line,
+                                   day_id: day,
+                                   origin_id: origin,
+                                   destination_id: destination})
+
     render :json => schedules
   end
 end
